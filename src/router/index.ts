@@ -6,14 +6,8 @@ import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 const routes: Array<RouteRecordRaw> = [
     // 在这里定义你的路由
     {
-        path: '/', // 仪表盘路由路径
-        name: 'Dashboard', // 仪表盘路由名称
-        // 路由级代码分割 (懒加载)
-        component: () => import('@/views/dashboard/index.vue') // 导入 Dashboard 组件
-    },
-    {
-      path: '/temp',
-      name: 'Temp',
+      path: '/',
+        name: 'Dashboard',
       component: () => import('@/pages/index.vue')
     },
     {
